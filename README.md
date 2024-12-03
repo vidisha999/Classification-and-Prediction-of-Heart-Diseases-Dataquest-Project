@@ -31,7 +31,7 @@ As shown in the correlation heatmap [Correlation Heatmap](Images/classification_
 Some insights gained from the EDA for the Prediction task were:
 
 - Variables `RestingBP`,`Cholesterol`,`FastingBP`  have minimum value of zero which is very low and unlikely to happen.
-- According to [American Heart Association](https://www.heart.org/en/health-topics/cholesterol/about-cholesterol/what-your-cholesterol-levels-mean)**Serum Cholesterol is**:
+- According to [American Heart Association](https://www.heart.org/en/health-topics/cholesterol/about-cholesterol/what-your-cholesterol-levels-mean) **Serum Cholesterol is**:
 > composite of different measurements. Your total blood cholesterol is calculated by adding your HDL and LDL cholesterol levels, plus 20% of your triglyceride level.
 - Since `Cholesterol` value contains serum Cholesterol , it is highly unlikely to have zero value for the cholesterol meassure.
 - The median of the Cholesterol is around 25 mm/dl lesser than the mean/ middle quantile cholesterol value which is 223 mm/ld. This suggests a left skewed distribution with possible outliers causinig the skewness.
