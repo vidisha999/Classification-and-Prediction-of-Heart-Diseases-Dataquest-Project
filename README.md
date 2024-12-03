@@ -12,19 +12,19 @@ The presence of heart disease can be determined by analyzing various patient fea
 Age and gender are some uncontrollable demographic factors. Lifestyle features such as physical activity, smoking and dietary habits are controllable risk factors according to the [CDC](https://www.cdc.gov/heart-disease/risk-factors/index.html#:~:text=Eating%20a%20diet%20high%20in,can%20lead%20to%20heart%20disease.).Some other indicators are clinical features such as blood pressure, cholesterol levels and laboratory features such as Fasting Blood Sugar(FBG), ECG results and also various symptoms reported by the patients such as chest pain types, fatigue or shortness of breath. 
 
 ## Data
-A real-life [Heart Disease Dataset](https://archive.ics.uci.edu/dataset/45/heart+disease) collected from a UCI repository that contains various patient features is used for the classification task. The likelihood of getting a cardiovascular disease in the future is predicted using a [kaggle dataset](./heart_disease_prediction_kaggle.csv) which contains several demographic, clinical and laboratory data collected from patients. 
+A real-life [Heart Disease Dataset](https://archive.ics.uci.edu/dataset/45/heart+disease) collected from a UCI repository that contains various patient features is used for the classification task. The likelihood of getting a cardiovascular disease in the future is predicted using a [kaggle dataset](Data/heart_disease_prediction_kaggle.csv) which contains several demographic, clinical and laboratory data collected from patients. 
 
 ## Exploratory Data Analysis (EDA) 
 
 ### 1. Classification Task
 Some insights gained from the EDA for the classification task were:
 
-As shown in the ![Correlation Heatmap](/classification_fig1.png) :
+As shown in the ![Correlation Heatmap](Images/classification_fig1.png) :
 - Features `thal`,`ca`,`oldpeak`,`exang`,`cp`,`slope` have positive correlation with the **target variable** or outcome **`present`**.
 - `thalach` variable has a negative correlation with the outcome **`present`**.
 - Rest of the feature variables didn't show a much strong correlation with the target variable.
 
-**Based on the ![distribution of each feature with the outcome](classification_fig2.png), the features `thal`,`ca`,`oldpeak`,`exang`,`cp`,`slope`,`thalach` were selected as the predictors due to significance variability of their distribution with the target variable.**
+**Based on the ![distribution of each feature with the outcome](Images/classification_fig2.png), the features `thal`,`ca`,`oldpeak`,`exang`,`cp`,`slope`,`thalach` were selected as the predictors due to significance variability of their distribution with the target variable.**
 
 ### 2. Prediction Model 
 Some insights gained from the EDA for the Prediction task were:
@@ -36,7 +36,7 @@ Some insights gained from the EDA for the Prediction task were:
 - The median of the Cholesterol is around 25 mm/dl lesser than the mean/ middle quantile cholesterol value which is 223 mm/ld. This suggests a left skewed distribution with possible outliers causinig the skewness.
 - Those variables having 'zero' values are imputed with the median value of the most relatable group made for that variable.
 - The categorical variables were converted to dummy variables in order to identify the correlation of each category in those variables with the target varaible.
-- Based on the ![correlation heatmap](/predicting_fig3.png):
+- Based on the ![correlation heatmap](Images/predicting_fig3.png):
    - `ST_Slope_Up`,`ST_Slope_Flat`,`ExerciseAngina_Y`,`Oldpeak`,`ChestPainType_ATA` are the top five features with highest correlation to the target varaiable,**`HeartDisease`**.
    - **Final selection of the features for model building were `ST_Slope_Up`,`ST_Slope_Flat`,`ExerciseAngina_Y`,`Oldpeak`,`ChestPainType_ATA`and `Sex_M`**.
 
