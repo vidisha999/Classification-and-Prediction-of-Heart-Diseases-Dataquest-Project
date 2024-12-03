@@ -19,7 +19,7 @@ A real-life [Heart Disease Dataset](https://archive.ics.uci.edu/dataset/45/heart
 ### 1. Classification Task
 Some insights gained from the EDA for the classification task were:
 
-As shown in the correlation heatmap :![Correlation Heatmap](Images/classification_fig1.png) 
+As shown in the correlation heatmap :[Correlation Heatmap](Images/classification_fig1.png) 
 - Features `thal`,`ca`,`oldpeak`,`exang`,`cp`,`slope` have positive correlation with the **target variable** or outcome **`present`**.
 - `thalach` variable has a negative correlation with the outcome **`present`**.
 - Rest of the feature variables didn't show a much strong correlation with the target variable.
