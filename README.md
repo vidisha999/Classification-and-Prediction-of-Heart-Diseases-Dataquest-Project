@@ -37,7 +37,7 @@ Some insights gained from the EDA for the Prediction task were:
 - The median of the Cholesterol is around 25 mm/dl lesser than the mean/ middle quantile cholesterol value which is 223 mm/ld. This suggests a left skewed distribution with possible outliers causinig the skewness.
 - Those variables having 'zero' values are imputed with the median value of the most relatable group made for that variable.
 - The categorical variables were converted to dummy variables in order to identify the correlation of each category in those variables with the target varaible.
-- Based on the [correlation heatmap](Images/predicting_fig3.png)
+- Based on the [correlation heatmap](Images/predicting_fig3.png):
    - `ST_Slope_Up`,`ST_Slope_Flat`,`ExerciseAngina_Y`,`Oldpeak`,`ChestPainType_ATA` are the top five features with highest correlation to the target varaiable,**`HeartDisease`**.
    - **Final selection of the features for model building were `ST_Slope_Up`,`ST_Slope_Flat`,`ExerciseAngina_Y`,`Oldpeak`,`ChestPainType_ATA`and `Sex_M`**.
 
@@ -143,7 +143,7 @@ Where:
 
 The **training accuracy** of the model is **86.91 %**, while the **testing accuracy** is **76.7%** which is expected for a generalized model.
 
-As shown in the [confusion matrix obtained using training dataset](Images/classification_fig3.png)obtained using training dataset the training **sensitivity** and training **specificity** are **82.2 %** and **90.76%** respectivly.
+As shown in the [confusion matrix obtained using training dataset](Images/classification_fig3.png) obtained using training dataset the training **sensitivity** and training **specificity** are **82.2 %** and **90.76%** respectivly.
 
 Based on the [confusion matrix obtained using testing dataset](Images/classification_fig4.png)
 , the testing **sensitivity** and testing **specificity** are **82.2 %** and **90.76%** respectivly, which were the same values obtained for the training dataset. The **Precision(PPV)** from the test dataset is **0.88** and **NPV** is **0.86**.
