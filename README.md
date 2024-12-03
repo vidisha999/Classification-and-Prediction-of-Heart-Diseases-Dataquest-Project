@@ -12,7 +12,7 @@ The presence of heart disease can be determined by analyzing various patient fea
 Age and gender are some uncontrollable demographic factors. Lifestyle features such as physical activity, smoking and dietary habits are controllable risk factors according to the [CDC](https://www.cdc.gov/heart-disease/risk-factors/index.html#:~:text=Eating%20a%20diet%20high%20in,can%20lead%20to%20heart%20disease.).Some other indicators are clinical features such as blood pressure, cholesterol levels and laboratory features such as Fasting Blood Sugar(FBG), ECG results and also various symptoms reported by the patients such as chest pain types, fatigue or shortness of breath. 
 
 ## Data
-A real-life [Heart Disease Dataset](https://archive.ics.uci.edu/dataset/45/heart+disease) collected from a UCI repository that contains various patient features is used for the classification task. The likelihood of getting a cardiovascular disease in the future is predicted using a [kaggle dataset](Data/heart_disease_prediction_kaggle.csv) which contains several demographic, clinical and laboratory data collected from patients. 
+A real-life [Heart Disease Dataset](https://archive.ics.uci.edu/dataset/45/heart+disease) collected from a UCI repository that contains various patient features is used for the classification task. The likelihood of getting a cardiovascular disease in the future is predicted using a [kaggle dataset](Data/heart_disease_prediction_kaggle  .csv) which contains several demographic, clinical and laboratory data collected from patients. 
 
 ## Exploratory Data Analysis (EDA) 
 
