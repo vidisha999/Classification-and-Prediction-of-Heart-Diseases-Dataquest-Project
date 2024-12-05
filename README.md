@@ -149,7 +149,7 @@ Based on the [confusion matrix obtained using testing dataset](Images/classifica
 , the testing **sensitivity** and testing **specificity** are **82.2 %** and **90.76%** respectivly, which were the same values obtained for the training dataset. The **Precision(PPV)** from the test dataset is **0.88** and **NPV** is **0.86**.
 
 
-### 1. Prediction Model 
+### 2. Prediction Model 
 
 - `ST-Slope_Up` feature has the highest validation accuracy of **82%**,when model's performance was evaluated using a single feature at a time.
 - The validation accuracy of the model gained when trained on multiple features is **82.97%**.
