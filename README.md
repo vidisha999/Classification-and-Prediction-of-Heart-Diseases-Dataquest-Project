@@ -77,7 +77,7 @@ X_train=scaler.fit_transform(X_train)
 X_test=scaler.transform(X_test)
 model.fit(X_train,y_train) # Fit the traning data to the model
 ```
-### 2. Prediction Task 
+### 2. Prediction Model 
 The scikit-learn's KNeighborsClassifier was used to create the predictive model using the following code: 
 ``` python
 
