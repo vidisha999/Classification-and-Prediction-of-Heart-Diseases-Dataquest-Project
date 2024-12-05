@@ -27,7 +27,7 @@ As shown in the correlation heatmap [Correlation Heatmap](Images/classification_
 **Based on the [distribution of each feature with the outcome](Images/classification_fig2.png), the features `thal`,`ca`,`oldpeak`,`exang`,`cp`,`slope`,`thalach` were selected as the predictors due to significance variability of their distribution with the target variable.**
 
 
-### 2. Prediction Model 
+### 2. Prediction Task
 Some insights gained from the EDA for the Prediction task were:
 
 - Variables `RestingBP`,`Cholesterol`,`FastingBP`  have minimum value of zero which is very low and unlikely to happen.
